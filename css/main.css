@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-img {
+    background: url('../assets/img/night.jpg') no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    transition: 1s ease-in-out;
+}
+
+.kitten-img {
+    background: url('../assets/img/kitten-small.png') no-repeat bottom;
+    transition: 1s ease-in-out;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .bg-img {
+      background-image: url('../assets/img/dawn.png');
+      transition: 1s ease-in-out;
+    }
+    .kitten-img {
+      background-image: url('../assets/img/kitten-large.png');
+      transition: 1s ease-in-out;
+    }
+}
+
+@media (min-width: 992px) {
+    .bg-img {
+      background-image: url('../assets/img/sunny-day.jpg');
+    } 
+    .kitten-img {
+      background-image: url('../assets/img/kitten-medium.png');
+    }
+}
